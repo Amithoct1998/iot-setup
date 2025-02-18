@@ -49,6 +49,8 @@ jobs:
       # Step 6: Install dependencies (Java and Node)
       - name: Install Java dependencies
         run: mvn clean install
+      - name: Install Java dependencies
+        run: mvn package
 
       - name: Install Node.js dependencies
         run: npm install
