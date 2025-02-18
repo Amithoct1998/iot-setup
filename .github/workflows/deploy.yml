@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'adoptopenjdk'  # Specify the JDK distribution
+          distribution: 'adoptium'  # Updated distribution
 
       # Step 3: Set up Node.js (AWS CDK uses Node.js)
       - name: Set up Node.js
