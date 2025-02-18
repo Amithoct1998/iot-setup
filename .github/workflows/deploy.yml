@@ -6,11 +6,6 @@ on:
     branches:
       - master
 
-  # Alternatively, you can trigger on pull requests:
-  # pull_request:
-  #   branches:
-  #     - master
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,7 +20,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'adoptium'  # Corrected to adoptium
+          distribution: 'temurin'  # Corrected to temurin
 
       # Step 3: Set up Node.js (AWS CDK uses Node.js)
       - name: Set up Node.js
